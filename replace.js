@@ -38,7 +38,7 @@ function handleText(textNode) {
 
     value = value.replace(/\b(M|m)inimalist/g, function(match, part, offset, string) {
         // m(109) - 6 = g(103)
-        return String.fromCharCode(part.charCodeAt(0) - 7) + 'obshite';
+        return String.fromCharCode(part.charCodeAt(0) - 6) + 'obshite';
     });
 
     textNode.nodeValue = value;
