@@ -1,0 +1,13 @@
+{
+    "manifest_version": 2,
+    "name": "Gobshite",
+    "version": "1.0",
+    "description": "Replaces certain keywords with gobshite.",
+    "content_scripts": [
+        {
+            "matches": ["*://*/*"],
+            "js": ["replace.js"],
+            "run_at": "document_end"
+        }
+    ]
+}
